@@ -1,0 +1,30 @@
+# `Actions`
+
+###### Extends `API`
+
+The actions API is meant for registering quick actions that may be useful for
+other plugins, or just have the ability to call on the fly.
+
+| Methods                             |
+| ----------------------------------- |
+| [`registerAction`](#registerAction) |
+| [`stop`](#stop)                     |
+
+## Methods
+
+### `.registerAction(actionId, executor)`
+
+Registers an action.
+
+| Parameter  | Type     | Description     |
+| ---------- | -------- | --------------- |
+| `actionId` | string   | Action ID       |
+| `executor` | Function | Action executor |
+
+**Returns: `void`**
+
+### `.stop()`
+
+Shuts down the API, removing all listeners and stored objects.
+
+**Returns: `void`**
